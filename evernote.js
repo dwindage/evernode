@@ -95,6 +95,7 @@ Evernote.prototype.findNotes = function(user, words, option, callback)
 	noteFilter.order = Types.NoteSortOrder[(option.sortOrder || 'UPDATED')];
 	noteFilter.ascending = option.ascending || false;
 	noteFilter.inactive = option.inactive || false;
+	noteFilter.notebookGuid = option.notebookGuid || '';
 	
 	var offset = option.offset || 0;
 	var count = option.count || 50;
