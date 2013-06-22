@@ -96,6 +96,7 @@ Evernote.prototype.findNotes = function(user, words, option, callback)
 	noteFilter.ascending = option.ascending || false;
 	noteFilter.inactive = option.inactive || false;
 	noteFilter.notebookGuid = option.notebookGuid || '';
+	noteFilter.tagGuids = option.tagGuids || [];
 	
 	var offset = option.offset || 0;
 	var count = option.count || 50;
